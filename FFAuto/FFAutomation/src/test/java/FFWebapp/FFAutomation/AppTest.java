@@ -5,27 +5,27 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
  
-public class AppTest  extends FFWebApp.Functions.Setup {
+public class AppTest  extends FFWebapp.Functions.Setup {
 	
-	public FFWebApp.Functions.UrlCall url = new FFWebApp.Functions.UrlCall(); 
+	public FFWebapp.Functions.UrlCall url = new FFWebapp.Functions.UrlCall(); 
 	
-	public FFWebApp.Functions.Products bc = new FFWebApp.Functions.Products(); 
+	public FFWebapp.Functions.Products bc = new FFWebapp.Functions.Products(); 
 	
-	public FFWebApp.Functions.ClientForm cf = new FFWebApp.Functions.ClientForm(); 
+	public FFWebapp.Functions.ClientForm cf = new FFWebapp.Functions.ClientForm(); 
 	
-	public FFWebApp.Functions.FollowUp fu = new FFWebApp.Functions.FollowUp(); 
+	public FFWebapp.Functions.FollowUp fu = new FFWebapp.Functions.FollowUp(); 
 	
-	public FFWebApp.Functions.FormSubmit fs = new FFWebApp.Functions.FormSubmit(); 
+	public FFWebapp.Functions.FormSubmit fs = new FFWebapp.Functions.FormSubmit(); 
 	 
-	public FFWebApp.Functions.Payment  p = new FFWebApp.Functions.Payment(); 
+	public FFWebapp.Functions.Payment  p = new FFWebapp.Functions.Payment(); 
 	
-	public FFWebApp.Functions.Save_Bill  s = new FFWebApp.Functions.Save_Bill(); 
+	public FFWebapp.Functions.Save_Bill  s = new FFWebapp.Functions.Save_Bill(); 
 	
-	public FFWebApp.Functions.CompanyLevelMenu  menu = new FFWebApp.Functions.CompanyLevelMenu(); 
+	public FFWebapp.Functions.CompanyLevelMenu  menu = new FFWebapp.Functions.CompanyLevelMenu(); 
 	
-	public FFWebApp.Functions.UserCreationForm  usform = new FFWebApp.Functions.UserCreationForm(); 
+	public FFWebapp.Functions.UserCreationForm  usform = new FFWebapp.Functions.UserCreationForm(); 
 	
-	public FFWebApp.Functions.AccessTemplate  access = new FFWebApp.Functions.AccessTemplate();
+	public FFWebapp.Functions.AccessTemplate  access = new FFWebapp.Functions.AccessTemplate();
 	
 	@Test (priority=1)
   public void EnquiryCreation() throws IOException, InterruptedException {

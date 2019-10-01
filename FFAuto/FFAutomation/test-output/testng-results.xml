@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="237542" started-at="2019-10-01T10:24:11Z" finished-at="2019-10-01T10:28:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="237542" started-at="2019-10-01T10:24:11Z" finished-at="2019-10-01T10:28:08Z">
+      <class name="FFWebapp.FFAutomation.AppTest">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="startUp" is-config="true" duration-ms="14783" started-at="2019-10-01T10:23:56Z" finished-at="2019-10-01T10:24:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="EnquiryCreation()[pri:1, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="EnquiryCreation" duration-ms="24689" started-at="2019-10-01T10:24:11Z" finished-at="2019-10-01T10:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnquiryCreation -->
+        <test-method status="PASS" signature="MemberCreation()[pri:2, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="MemberCreation" duration-ms="51097" started-at="2019-10-01T10:24:36Z" finished-at="2019-10-01T10:25:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MemberCreation -->
+        <test-method status="PASS" signature="trialbill()[pri:3, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="trialbill" duration-ms="34301" started-at="2019-10-01T10:25:27Z" finished-at="2019-10-01T10:26:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trialbill -->
+        <test-method status="PASS" signature="UserCreation()[pri:4, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="UserCreation" duration-ms="20686" started-at="2019-10-01T10:26:01Z" finished-at="2019-10-01T10:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCreation -->
+        <test-method status="PASS" signature="Userassigntemplate()[pri:5, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="Userassigntemplate" duration-ms="15054" started-at="2019-10-01T10:26:22Z" finished-at="2019-10-01T10:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Userassigntemplate -->
+        <test-method status="PASS" signature="EditUser()[pri:6, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="EditUser" duration-ms="13039" started-at="2019-10-01T10:26:37Z" finished-at="2019-10-01T10:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditUser -->
+        <test-method status="PASS" signature="AccessTEM()[pri:7, instance:FFWebapp.FFAutomation.AppTest@6f7fd0e6]" name="AccessTEM" duration-ms="78638" started-at="2019-10-01T10:26:50Z" finished-at="2019-10-01T10:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessTEM -->
+      </class> <!-- FFWebapp.FFAutomation.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
