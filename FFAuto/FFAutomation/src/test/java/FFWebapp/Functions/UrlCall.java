@@ -1,4 +1,4 @@
-package FFWebapp.FFFunctions;
+package FFWebapp.Functions;
 
 import org.testng.annotations.Test;
 

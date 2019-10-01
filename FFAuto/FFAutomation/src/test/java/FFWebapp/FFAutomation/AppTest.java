@@ -5,27 +5,27 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
  
-public class AppTest  extends FFWebapp.FFFunctions.Setup {
+public class AppTest  extends FFWebapp.Functions.Setup {
 	
-	public FFWebapp.FFFunctions.UrlCall url = new FFWebapp.FFFunctions.UrlCall(); 
+	public FFWebapp.Functions.UrlCall url = new FFWebapp.Functions.UrlCall(); 
 	
-	public FFWebapp.FFFunctions.Products bc = new FFWebapp.FFFunctions.Products(); 
+	public FFWebapp.Functions.Products bc = new FFWebapp.Functions.Products(); 
 	
-	public FFWebapp.FFFunctions.ClientForm cf = new FFWebapp.FFFunctions.ClientForm(); 
+	public FFWebapp.Functions.ClientForm cf = new FFWebapp.Functions.ClientForm(); 
 	
-	public FFWebapp.FFFunctions.FollowUp fu = new FFWebapp.FFFunctions.FollowUp(); 
+	public FFWebapp.Functions.FollowUp fu = new FFWebapp.Functions.FollowUp(); 
 	
-	public FFWebapp.FFFunctions.FormSubmit fs = new FFWebapp.FFFunctions.FormSubmit(); 
+	public FFWebapp.Functions.FormSubmit fs = new FFWebapp.Functions.FormSubmit(); 
 	 
-	public FFWebapp.FFFunctions.Payment  p = new FFWebapp.FFFunctions.Payment(); 
+	public FFWebapp.Functions.Payment  p = new FFWebapp.Functions.Payment(); 
 	
-	public FFWebapp.FFFunctions.Save_Bill  s = new FFWebapp.FFFunctions.Save_Bill(); 
+	public FFWebapp.Functions.Save_Bill  s = new FFWebapp.Functions.Save_Bill(); 
 	
-	public FFWebapp.FFFunctions.CompanyLevelMenu  menu = new FFWebapp.FFFunctions.CompanyLevelMenu(); 
+	public FFWebapp.Functions.CompanyLevelMenu  menu = new FFWebapp.Functions.CompanyLevelMenu(); 
 	
-	public FFWebapp.FFFunctions.UserCreationForm  usform = new FFWebapp.FFFunctions.UserCreationForm(); 
+	public FFWebapp.Functions.UserCreationForm  usform = new FFWebapp.Functions.UserCreationForm(); 
 	
-	public FFWebapp.FFFunctions.AccessTemplate  access = new FFWebapp.FFFunctions.AccessTemplate();
+	public FFWebapp.Functions.AccessTemplate  access = new FFWebapp.Functions.AccessTemplate();
 	
 	@Test (priority=1)
   public void EnquiryCreation() throws IOException, InterruptedException {

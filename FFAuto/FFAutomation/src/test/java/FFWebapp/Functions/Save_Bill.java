@@ -1,4 +1,4 @@
-package FFWebapp.FFFunctions;
+package FFWebapp.Functions;
 
 import java.awt.AWTException;
 import java.awt.Robot;

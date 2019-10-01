@@ -1,4 +1,4 @@
-package FFWebapp.FFFunctions;
+package FFWebapp.Functions;
 
 import java.io.IOException;
 import java.util.List;
