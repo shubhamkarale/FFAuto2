@@ -21,11 +21,10 @@ public class Save_Bill extends Setup {
 
 		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.elementToBeClickable((By.xpath(
-				"/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/div[22]/div[1]/div[1]/form[1]/div[3]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/input[1]")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable((By.id("BtnSubmit")))).click();
 
-		Thread.sleep(5000);
-
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("successmessage")));
+	
 		String MemberID = wd.getCurrentUrl().substring(80, 88);
 
 		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
@@ -41,6 +40,8 @@ public class Save_Bill extends Setup {
 //		Actions action = new Actions(wd);
 //		action.sendKeys(Keys.ESCAPE).build().perform();
 		robot.keyPress(KeyEvent.VK_ESCAPE);
+		
+		Thread.sleep(2000);
 		robot.keyRelease(KeyEvent.VK_ESCAPE);
 		Thread.sleep(5000);
 		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());

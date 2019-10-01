@@ -34,7 +34,7 @@ public void startUp(){
   	wd.get(url+"ffDefault.aspx");    
     wd.manage().window().maximize();    
     wd.manage().deleteAllCookies();    
-    wait = new WebDriverWait (wd, 20);    
+    wait = new WebDriverWait (wd, 60);    
     wd.findElement(By.id("txtUsername")).sendKeys(username);    
     wd.findElement(By.id("txtPassword")).sendKeys(Password);	
 	wd.findElement(By.id("SignIn")).click();// click on sign in	
