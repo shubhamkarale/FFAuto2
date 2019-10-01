@@ -47,7 +47,6 @@ public class AppTest  extends FFWebapp.Functions.Setup {
 			bc.anyProduct();
 			p.Multi_Pay();
 			s.SavememBill();
-
 	}
 	
 //	@Test (priority=3)
