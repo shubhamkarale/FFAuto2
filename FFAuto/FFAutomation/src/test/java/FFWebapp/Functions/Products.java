@@ -27,7 +27,7 @@ public class Products extends Setup {
 
 					wd.findElement(By.xpath(ProdList)).click();
 
-					wait.until(ExpectedConditions.presenceOfElementLocated(new ByAll(By.xpath("//*[@id='AddProdBtn']/strong"),By.xpath("/html/body/table/tbody/tr/td[2]/div[22]/div/div[1]/form/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[3]/div[2]/div[2]/div/div/div[2]/div/strong")))).click();
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr/td[2]/div[22]/div/div[1]/form/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[3]/div[2]/div[2]/div/div/div[2]/div/strong"))).click();
 
 					break;
 				} else {
