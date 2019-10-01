@@ -36,9 +36,9 @@ public class Save_Bill extends Setup {
 		Thread.sleep(3000);
 
 		robot.keyPress(KeyEvent.VK_ESCAPE);
-
+               Thread.sleep(3000);
 		robot.keyRelease(KeyEvent.VK_ESCAPE);
-
+         Thread.sleep(3000);
 		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
 		int tabcount2 = tabs5.size();
 
