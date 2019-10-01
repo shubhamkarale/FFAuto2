@@ -76,6 +76,7 @@ public class FormSubmit extends Setup{
 		  
 	  } else if(getUrl.contains("pagetype=member")) {
 		  
+		  
 		  wd.findElement(By.id("btnSaveEnq")).click();
 		  
 		  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("PayTypeCash")));

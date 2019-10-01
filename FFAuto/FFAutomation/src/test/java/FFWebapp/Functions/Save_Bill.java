@@ -6,6 +6,8 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -33,12 +35,14 @@ public class Save_Bill extends Setup {
 		wd.switchTo().window(tabs4.get(tabcount - 1));
 
 		Robot robot = new Robot();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
+		
+//		Actions action = new Actions(wd);
+//		action.sendKeys(Keys.ESCAPE).build().perform();
 		robot.keyPress(KeyEvent.VK_ESCAPE);
-               Thread.sleep(3000);
 		robot.keyRelease(KeyEvent.VK_ESCAPE);
-         Thread.sleep(3000);
+		Thread.sleep(5000);
 		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
 		int tabcount2 = tabs5.size();
 
@@ -73,7 +77,7 @@ public class Save_Bill extends Setup {
 		}
 	}
 	
-	 public void SaveTrial() {
+	 public void SaveTrial() throws InterruptedException {
 		 
 		 // Trial Date Selection 
 		 	wd.findElement(By.id("ctl00_ContentPlaceHolder1_imgTrlStart")).click();
@@ -94,7 +98,7 @@ public class Save_Bill extends Setup {
 		String Status =	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("customertype"))).getText().toLowerCase();
 		
 		if(Status.contains("trial")) {
-			
+			Thread.sleep(5000);
 			System.out.println("Trial Created Successfully "+ MemberId);
 			
 	  }else {
