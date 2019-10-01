@@ -6,7 +6,13 @@
       <class name="FFWebapp.FFAutomation.AppTest">
         <methods>
           <include name="EnquiryCreation"/>
+          <include name="trialbill"/>
+          <include name="UserCreation"/>
           <include name="startUp"/>
+          <include name="Userassigntemplate"/>
+          <include name="AccessTEM"/>
+          <include name="MemberCreation"/>
+          <include name="EditUser"/>
         </methods>
       </class> <!-- FFWebapp.FFAutomation.AppTest -->
     </classes>
