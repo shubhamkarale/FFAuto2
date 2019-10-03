@@ -1,5 +1,9 @@
 package FFWebapp.Functions;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -81,7 +85,7 @@ public class Payment extends Setup {
 	}
 
 	@Test
-	public void Multi_Pay() {
+	public void Multi_Pay() throws AWTException, InterruptedException {
 		
 		
 		String Amount = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
@@ -104,7 +108,14 @@ public class Payment extends Setup {
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_005"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_006"))).sendKeys(RandomStringUtils.randomNumeric(6));
-				  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr/td[2]/div[22]/div/div[1]/form/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[4]/table/tbody/tr[2]/td/div[2]/div[4]/div/table/tbody/tr[2]/td[2]/md-input-container/input"))).click();
+				  Thread.sleep(3000);
+				  
+				  Robot r = new Robot();
+				  
+				  r.keyPress(KeyEvent.VK_TAB);
+				  r.keyRelease(KeyEvent.VK_TAB);
+				  
+				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_007"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_008"))).sendKeys("SBI");
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bankName!"))).sendKeys("Andheri");
