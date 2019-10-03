@@ -110,16 +110,16 @@ public class Payment extends Setup {
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_006"))).sendKeys(RandomStringUtils.randomNumeric(6));
 				  Thread.sleep(3000);
 				  
-				  Robot r = new Robot();
+//				  Robot r = new Robot();
+//				  
+//				  r.keyPress(KeyEvent.VK_TAB);
+//				  r.keyRelease(KeyEvent.VK_TAB);
+//			  
+//				  JavascriptExecutor js=(JavascriptExecutor)wd;
+//				  js.executeScript("$('#input_007').val('03-Oct-2019')");
 				  
-				  r.keyPress(KeyEvent.VK_TAB);
-				  r.keyRelease(KeyEvent.VK_TAB);
-			  
-				  JavascriptExecutor js=(JavascriptExecutor)wd;
-				  js.executeScript("$('#input_007').val('03-Oct-2019')");
-
-//				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_007"))).click();
-//				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
+				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_007"))).click();
+				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_008"))).sendKeys("SBI");
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bankName!"))).sendKeys("Andheri");
 				  new Select(wd.findElement(By.id("DDTYPE"))).selectByIndex(2);

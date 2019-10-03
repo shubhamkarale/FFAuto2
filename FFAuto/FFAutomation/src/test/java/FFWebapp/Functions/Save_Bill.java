@@ -5,9 +5,11 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Save_Bill extends Setup {
@@ -20,8 +22,21 @@ public class Save_Bill extends Setup {
 		Thread.sleep(2000);
 
 		wait.until(ExpectedConditions.elementToBeClickable((By.id("BtnSubmit")))).click();
+		
+		if (wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("errorlist_divitems"))) != null) {
 
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("successmessage")));
+			String ErrorMsg = wd.findElement(By.id("errorlist_divitems")).getText();
+
+			System.out.println("unknown Error Found execution stopped " + ErrorMsg);
+			
+			Assert.assertFalse(wd.findElement(By.id("errorlist_divitems")).isDisplayed());			
+			
+			}else {
+				
+				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("successmessage")));
+		}
+
+		
 	
 		String MemberID = wd.getCurrentUrl().substring(80, 88);
 
