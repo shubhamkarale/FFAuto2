@@ -30,6 +30,8 @@ public class Payment extends Setup {
 		wd.findElement(By.id("input_002")).sendKeys(Amount);
 		Thread.sleep(2000);
 		wd.findElement(By.id("Pay_Now")).click();
+		
+		System.out.println("Payment done "+Amount);
 
 	}
 
