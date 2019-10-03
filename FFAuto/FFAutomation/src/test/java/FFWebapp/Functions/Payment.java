@@ -116,7 +116,7 @@ public class Payment extends Setup {
 				  r.keyRelease(KeyEvent.VK_TAB);
 				  
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_007"))).click();
-				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
+				  wait.until(ExpectedConditions.elementToBeClickable(By.linkText("20"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_008"))).sendKeys("SBI");
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bankName!"))).sendKeys("Andheri");
 				  new Select(wd.findElement(By.id("DDTYPE"))).selectByIndex(2);
