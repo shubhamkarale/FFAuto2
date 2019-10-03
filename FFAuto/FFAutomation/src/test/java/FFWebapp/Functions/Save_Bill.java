@@ -23,18 +23,18 @@ public class Save_Bill extends Setup {
 
 		wait.until(ExpectedConditions.elementToBeClickable((By.id("BtnSubmit")))).click();
 		
-		if (wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("errorlist_divitems"))) != null) {
-
-			String ErrorMsg = wd.findElement(By.id("errorlist_divitems")).getText();
-
-			System.out.println("unknown Error Found execution stopped " + ErrorMsg);
-			
-			Assert.assertFalse(wd.findElement(By.id("errorlist_divitems")).isDisplayed());			
-			
-			}else {
-				
-				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("successmessage")));
-		}
+//		if (wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("errorlist_divitems"))) != null) {
+//
+//			String ErrorMsg = wd.findElement(By.id("errorlist_divitems")).getText();
+//
+//			System.out.println("unknown Error Found execution stopped " + ErrorMsg);
+//			
+//			Assert.assertFalse(wd.findElement(By.id("errorlist_divitems")).isDisplayed());			
+//			
+//			}else {
+//				
+//				wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("successmessage")));
+//		}
 
 		
 	
@@ -54,7 +54,7 @@ public class Save_Bill extends Setup {
 //		action.sendKeys(Keys.ESCAPE).build().perform();
 		robot.keyPress(KeyEvent.VK_ESCAPE);
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		robot.keyRelease(KeyEvent.VK_ESCAPE);
 		Thread.sleep(5000);
 		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
