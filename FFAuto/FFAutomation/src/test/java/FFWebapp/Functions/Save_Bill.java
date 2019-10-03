@@ -25,6 +25,8 @@ public class Save_Bill extends Setup {
 
 		wait.until(ExpectedConditions.elementToBeClickable((By.id("BtnSubmit")))).click();
 		
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("successmessage")));
+		
 		System.out.println("Step 1");
 		
 //		if (wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("errorlist_divitems"))) != null) {
