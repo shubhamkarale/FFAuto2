@@ -104,7 +104,7 @@ public class Payment extends Setup {
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_005"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_006"))).sendKeys(RandomStringUtils.randomNumeric(6));
-				  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"input_007\"]"))).click();
+				  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr/td[2]/div[22]/div/div[1]/form/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[4]/table/tbody/tr[2]/td/div[2]/div[4]/div/table/tbody/tr[2]/td[2]/md-input-container/input"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("20"))).click();
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input_008"))).sendKeys("SBI");
 				  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bankName!"))).sendKeys("Andheri");
