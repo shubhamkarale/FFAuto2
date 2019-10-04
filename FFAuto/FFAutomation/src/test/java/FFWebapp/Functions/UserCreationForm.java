@@ -129,7 +129,7 @@ public class UserCreationForm extends Setup{
 		Thread.sleep(3000);
 //		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
 		Thread.sleep(4000);//*[@id="1006"]
-		
+		TenantId = "1006";
 		wait.until(ExpectedConditions.presenceOfElementLocated((By.id(TenantId))));
 		wd.findElement(By.id(TenantId)).click();
 		
