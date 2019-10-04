@@ -128,7 +128,9 @@ public class UserCreationForm extends Setup{
 		Thread.sleep(3000);
 //		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
 		Thread.sleep(4000);
+		
 		wait.until(ExpectedConditions.presenceOfElementLocated((By.id(TenantId)))).click();
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				(By.id("select2-ctl00_ContentPlaceHolder1_ddlAccessTemplate-container")))).click();
 		wait.until(ExpectedConditions
@@ -176,8 +178,10 @@ public class UserCreationForm extends Setup{
 		
 		Thread.sleep(2000);
 		
+		
 		Assert.assertTrue(wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).isDisplayed());
-		wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Name);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ctl00_ContentPlaceHolder1_txtUserName"))).sendKeys(Name);
+		//wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Name);
 		Thread.sleep(2000);
 		
 		Assert.assertTrue(wd.findElement(By.id("ctl00_ContentPlaceHolder1_btnSerSubmit")).isDisplayed());
