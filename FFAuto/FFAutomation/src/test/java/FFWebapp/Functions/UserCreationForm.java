@@ -127,7 +127,7 @@ public class UserCreationForm extends Setup{
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 //		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated((By.id(TenantId)))).click();
 		
