@@ -186,6 +186,7 @@ public class UserCreationForm extends Setup{
 		
 		
 		Assert.assertTrue(wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).isDisplayed());
+		Thread.sleep(4000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ctl00_ContentPlaceHolder1_txtUserName"))).sendKeys(Name);
 		//wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Name);
 		Thread.sleep(2000);
