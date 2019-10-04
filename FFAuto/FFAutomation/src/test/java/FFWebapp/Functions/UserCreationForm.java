@@ -127,12 +127,14 @@ public class UserCreationForm extends Setup{
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 //		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
-		wait.until(ExpectedConditions.visibilityOfElementLocated((By.id(TenantId)))).click();
+		Thread.sleep(4000);
+		wait.until(ExpectedConditions.presenceOfElementLocated((By.id(TenantId)))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				(By.id("select2-ctl00_ContentPlaceHolder1_ddlAccessTemplate-container")))).click();
 		wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//*[@id='ctl00_combodymaster']/span/span/span[1]/input")))
 				.sendKeys("Administrator");
+		
 		Thread.sleep(1000);
 		Robot robot1 = new Robot();
 		robot1.keyPress(KeyEvent.VK_ENTER);
