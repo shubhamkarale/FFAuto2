@@ -7,6 +7,7 @@
         <methods>
           <include name="startUp"/>
           <include name="AccessTEM"/>
+          <include name="EditUser"/>
         </methods>
       </class> <!-- FFWebapp.FFAutomation.AppTest -->
     </classes>
