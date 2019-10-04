@@ -27,39 +27,39 @@ public class AppTest  extends FFWebapp.Functions.Setup {
 	
 	public FFWebapp.Functions.AccessTemplate  access = new FFWebapp.Functions.AccessTemplate();
 	
-	@Test (priority=1)
-  public void EnquiryCreation() throws IOException, InterruptedException {
-		
-		url.DashboardPage();
-		url.EnquiryPage();
-		cf.formfilling();
-		fu.SaveFollowUp();
-		fs.Enquiry();
-  }
-	
-	@Test (priority=2)
-	  public void MemberCreation() throws IOException, InterruptedException, AWTException {
-			
-			url.DashboardPage();
-			url.MemberPage();
-			cf.formfilling();
-			fs.Member();
-			bc.anyProduct();
-			p.FullPay();
-			s.SavememBill();
-	}
-	
-	@Test (priority=3)
-	  public void trialbill() throws IOException, InterruptedException, AWTException {
-		
-			url.DashboardPage();
-			url.TrialPage();
-			cf.formfilling();
-			fu.SaveFollowUp();
-			fs.Trial();
-			s.SaveTrial();  
-	}
-	
+//	@Test (priority=1)
+//  public void EnquiryCreation() throws IOException, InterruptedException {
+//		
+//		url.DashboardPage();
+//		url.EnquiryPage();
+//		cf.formfilling();
+//		fu.SaveFollowUp();
+//		fs.Enquiry();
+//  }
+//	
+//	@Test (priority=2)
+//	  public void MemberCreation() throws IOException, InterruptedException, AWTException {
+//			
+//			url.DashboardPage();
+//			url.MemberPage();
+//			cf.formfilling();
+//			fs.Member();
+//			bc.anyProduct();
+//			p.FullPay();
+//			s.SavememBill();
+//	}
+//	
+//	@Test (priority=3)
+//	  public void trialbill() throws IOException, InterruptedException, AWTException {
+//		
+//			url.DashboardPage();
+//			url.TrialPage();
+//			cf.formfilling();
+//			fu.SaveFollowUp();
+//			fs.Trial();
+//			s.SaveTrial();  
+//	}
+//	
 	@Test (priority=4)
 	  public void UserCreation() throws IOException, InterruptedException, AWTException {
 			
