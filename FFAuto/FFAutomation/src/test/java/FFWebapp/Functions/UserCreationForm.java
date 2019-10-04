@@ -18,6 +18,7 @@ public class UserCreationForm extends Setup{
 	String Name = RandomStringUtils.randomAlphabetic(6).toLowerCase();
 	
 	WebElement username;
+	String TenantId = "1006";
 
   @Test
   public void createUserForm() throws InterruptedException {  
@@ -129,7 +130,7 @@ public class UserCreationForm extends Setup{
 //		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
 		Thread.sleep(4000);//*[@id="1006"]
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated((By.id("1006")))).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated((By.id(TenantId)))).click();
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				(By.id("select2-ctl00_ContentPlaceHolder1_ddlAccessTemplate-container")))).click();
