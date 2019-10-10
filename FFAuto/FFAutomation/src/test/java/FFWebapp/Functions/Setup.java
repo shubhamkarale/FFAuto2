@@ -18,7 +18,7 @@ String Password = "grip@123";
 
 String TenantName = "only";
 
-String TenantId ;
+String TenantId ="1006";
 
 String CompanyId = "27";
 
