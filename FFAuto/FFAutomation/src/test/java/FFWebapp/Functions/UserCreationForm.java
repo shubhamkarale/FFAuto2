@@ -132,13 +132,9 @@ public class UserCreationForm extends Setup{
 		Thread.sleep(5000);
 		
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='selectAllTenant']")));
+			
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/div[8]/div[1]/div[1]/form[1]/table[1]/tbody[1]/tr[3]/td[1]/table[1]/tbody[1]/tr[3]/td[2]/span[1]/div[1]/input[1]"))).click();
 		
-		if(wd.findElement(By.cssSelector("#selectAllTenant")).isDisplayed()){
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#selectAllTenant"))).click();
-		}
-		else {
-			System.out.println("not found ");
-		}
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				(By.id("select2-ctl00_ContentPlaceHolder1_ddlAccessTemplate-container")))).click();
