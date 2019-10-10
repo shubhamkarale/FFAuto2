@@ -127,11 +127,9 @@ public class UserCreationForm extends Setup{
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
-
-
 		
-		if(wd.findElement(By.id("selectAllTenant")).isDisplayed()){
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("selectAllTenant"))).click();
+		if(wd.findElement(By.cssSelector("#selectAllTenant")).isDisplayed()){
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#selectAllTenant"))).click();
 		}
 		else {
 			System.out.println("not found ");
