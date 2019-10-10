@@ -127,7 +127,7 @@ public class UserCreationForm extends Setup{
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		
-		wait.until(ExpectedConditions.attributeToBe(By.cssSelector("#selectAllTenant"), "name", "SelectAll"));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='selectAllTenant']")));
 		
 		if(wd.findElement(By.cssSelector("#selectAllTenant")).isDisplayed()){
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#selectAllTenant"))).click();
