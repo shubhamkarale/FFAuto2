@@ -128,13 +128,13 @@ public class UserCreationForm extends Setup{
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 //		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
-		Thread.sleep(4000);//*[@id="1006"]
+//		Thread.sleep(4000);//*[@id="1006"]
 		//TenantId = "1006";
-		
-		if(wait.until(ExpectedConditions.presenceOfElementLocated(By.id(TenantId))).isDisplayed()){
-			wd.findElement(By.id(TenantId)).click();
-					
-		}
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#\\31 006"))).click();
+//		if(wait.until(ExpectedConditions.presenceOfElementLocated(By.id(TenantId))).isDisplayed()){
+//			wd.findElement(By.id(TenantId)).click();
+//					
+//		}
 		
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
