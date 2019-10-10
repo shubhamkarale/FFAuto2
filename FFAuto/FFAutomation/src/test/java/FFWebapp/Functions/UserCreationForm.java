@@ -127,15 +127,15 @@ public class UserCreationForm extends Setup{
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
-//		Assert.assertTrue(wd.findElement(By.id(TenantId)).isDisplayed());
-//		Thread.sleep(4000);//*[@id="1006"]
-		//TenantId = "1006";
-		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#\\31 006"))).click();
-//		if(wait.until(ExpectedConditions.presenceOfElementLocated(By.id(TenantId))).isDisplayed()){
-//			wd.findElement(By.id(TenantId)).click();
-//					
-//		}
+
+
 		
+		if(wd.findElement(By.id("selectAllTenant")).isDisplayed()){
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("selectAllTenant"))).click();
+		}
+		else {
+			System.out.println("not found ");
+		}
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				(By.id("select2-ctl00_ContentPlaceHolder1_ddlAccessTemplate-container")))).click();
@@ -183,7 +183,6 @@ public class UserCreationForm extends Setup{
 		wd.findElement(By.id("ctl00_ContentPlaceHolder1_btnUpdate")).click();
 		
 		Thread.sleep(2000);
-		
 		
 		Assert.assertTrue(wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).isDisplayed());
 		Thread.sleep(4000);
