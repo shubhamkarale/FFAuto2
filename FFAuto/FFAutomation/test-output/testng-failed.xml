@@ -6,8 +6,7 @@
       <class name="FFWebapp.FFAutomation.AppTest">
         <methods>
           <include name="startUp"/>
-          <include name="AccessTEM"/>
-          <include name="EditUser"/>
+          <include name="Userassigntemplate"/>
         </methods>
       </class> <!-- FFWebapp.FFAutomation.AppTest -->
     </classes>
