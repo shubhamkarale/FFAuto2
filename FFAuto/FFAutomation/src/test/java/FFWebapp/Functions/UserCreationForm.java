@@ -126,7 +126,8 @@ public class UserCreationForm extends Setup{
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3000);
+		
+		wait.until(ExpectedConditions.attributeToBe(By.cssSelector("#selectAllTenant"), "name", "SelectAll"));
 		
 		if(wd.findElement(By.cssSelector("#selectAllTenant")).isDisplayed()){
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#selectAllTenant"))).click();
